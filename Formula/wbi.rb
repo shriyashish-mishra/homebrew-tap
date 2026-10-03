@@ -1,26 +1,26 @@
 class Wbi < Formula
   desc "Coordination layer for teams building software with humans and AI coding agents"
   homepage "https://github.com/shriyashish-mishra/who-broke-it"
-  version "0.2.1"
+  version "0.2.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/shriyashish-mishra/who-broke-it/releases/download/v0.2.1/wbi_0.2.1_darwin_arm64.tar.gz"
-      sha256 "eebb3a26532d8938d8e72a21496f38785b77a8b04ec5bf7d5bb4aec7fedb8ccb"
+      url "https://github.com/shriyashish-mishra/who-broke-it/releases/download/v0.2.2/wbi_0.2.2_darwin_arm64.tar.gz"
+      sha256 "f2e683810a2d327352138d64d8a32f75dc4509a32345bd29ddf4670d04fc87d5"
     else
-      url "https://github.com/shriyashish-mishra/who-broke-it/releases/download/v0.2.1/wbi_0.2.1_darwin_amd64.tar.gz"
-      sha256 "7b3aabf032e81ae35db685095dd5f4bee967388a35257a4c2131bf46e2f0ef34"
+      url "https://github.com/shriyashish-mishra/who-broke-it/releases/download/v0.2.2/wbi_0.2.2_darwin_amd64.tar.gz"
+      sha256 "b81b8ada573be902185e3b4cb0bc9f132bd33e8446c815ec17c9b9858996e245"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/shriyashish-mishra/who-broke-it/releases/download/v0.2.1/wbi_0.2.1_linux_arm64.tar.gz"
-      sha256 "ff5bb93ba0e068169c6105f909ebdf0db662470f7c82ed352c8ba5bf66aa0902"
+      url "https://github.com/shriyashish-mishra/who-broke-it/releases/download/v0.2.2/wbi_0.2.2_linux_arm64.tar.gz"
+      sha256 "514f2e3550f690a8f868e91cd45572e10760784a1a9bc444a352f43ada6aa8f0"
     else
-      url "https://github.com/shriyashish-mishra/who-broke-it/releases/download/v0.2.1/wbi_0.2.1_linux_amd64.tar.gz"
-      sha256 "e56b82e34e018a661a9cd126094830f79468dd0bd312f6d3a155e77e330f1d72"
+      url "https://github.com/shriyashish-mishra/who-broke-it/releases/download/v0.2.2/wbi_0.2.2_linux_amd64.tar.gz"
+      sha256 "0b0290390661c4737a8eecc66f944a1717472c3a1b8ca08ba501ce093844c739"
     end
   end
 
@@ -29,6 +29,6 @@ class Wbi < Formula
   end
 
   test do
-    assert_match "0.2.1", shell_output("#{bin}/wbi version")
+    assert_match "0.2.2", shell_output("#{bin}/wbi version")
   end
 end
